@@ -28,9 +28,9 @@ public class ColorManager:IColorService
         return _colorDal.GetAll();
     }
 
-    public List<Color> GetByColorId(int colorId)
+    public Color GetByColorId(int colorId)
     {
-        return _colorDal.GetAll(c => c.ColorId == colorId);
+        return _colorDal.get(c => c.ColorId == colorId);
     }
 
     public void Update(Color color)

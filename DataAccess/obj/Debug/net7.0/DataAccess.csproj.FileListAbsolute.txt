@@ -28,3 +28,5 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/obj/Debug/net7.0/refint/DataAccess.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/obj/Debug/net7.0/DataAccess.pdb
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/obj/Debug/net7.0/ref/DataAccess.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/bin/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/bin/Debug/net7.0/Core.pdb

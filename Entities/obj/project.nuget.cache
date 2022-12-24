@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "0dlc/WUflDaaOIsxejH6wQHDYPro5YSCKgOQOYLjyacnwJcoZH2KJLhN0Yat9rks6Xw3TWJpf4y/uK6iSF/1Kg==",
+  "dgSpecHash": "fqmzO/KvJ6nF1h2ttT0PR0FVn8z34tSHmLxReHA0sbc7j094qYlAATAQa2dti66M82WnGEN7ION8Gx51Oyb3yw==",
   "success": true,
   "projectFilePath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/muratfirtina/.nuget/packages/microsoft.entityframeworkcore/7.0.1/microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.1/microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.1/microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.1/microsoft.entityframeworkcore.relational.7.0.1.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/npgsql/7.0.1/npgsql.7.0.1.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.1/npgsql.entityframeworkcore.postgresql.7.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

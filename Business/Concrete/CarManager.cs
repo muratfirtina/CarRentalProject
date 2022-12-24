@@ -13,9 +13,9 @@ public class CarManager : ICarService
         _carDal = carDal;
     }
 
-    public List<Car> GetById(int Id)
+    public Car GetById(int Id)
     {
-        return new List<Car>(_carDal.GetAll(c => c.Id == Id));
+        return _carDal.get(c => c.Id == Id);
 
     }
 

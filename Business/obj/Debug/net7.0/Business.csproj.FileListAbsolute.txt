@@ -32,3 +32,5 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/obj/Debug/net7.0/refint/Business.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/obj/Debug/net7.0/Business.pdb
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/obj/Debug/net7.0/ref/Business.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/bin/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/bin/Debug/net7.0/Core.pdb

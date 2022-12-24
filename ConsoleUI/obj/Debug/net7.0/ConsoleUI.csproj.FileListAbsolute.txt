@@ -56,3 +56,5 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Extensions.Primitives.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Npgsql.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Core.pdb

@@ -22,3 +22,6 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/obj/Debug/net7.0/refint/Entities.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/obj/Debug/net7.0/Entities.pdb
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/obj/Debug/net7.0/ref/Entities.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/bin/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/bin/Debug/net7.0/Core.pdb
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/obj/Debug/net7.0/Entities.csproj.CopyComplete

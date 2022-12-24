@@ -19,9 +19,9 @@ public class BrandManager : IBrandService
         return _brandDal.GetAll();
     }
 
-    public List<Brand> GetByBrandId(int brandId)
+    public Brand GetByBrandId(int brandId)
     {
-        return _brandDal.GetAll(b => b.BrandId == brandId);
+        return _brandDal.get(b => b.BrandId == brandId);
     }
 
     public void Add(Brand brand)
