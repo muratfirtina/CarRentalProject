@@ -1,6 +1,7 @@
 using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Concrete.DTOs;
 
 namespace Business.Concrete;
 
@@ -74,5 +75,9 @@ public class CarManager : ICarService
         _carDal.Delete(car);
         Console.WriteLine(car.Id + " Id li araç silinmiştir.");
     }
-    
+
+    public List<CarDetailDto> GetCarDetails()
+    {
+        return _carDal.GetCarDetails();
+    }
 }
