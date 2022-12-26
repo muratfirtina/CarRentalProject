@@ -49,7 +49,7 @@ public class CarManager : ICarService
         }
         else
         {
-            Console.WriteLine("Araba eklenemedi");
+            throw new Exception("araç bilgisi boş olamaz veya günlük fiyatı 0'dan küçük olamaz");
         }
     }
 

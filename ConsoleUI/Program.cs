@@ -13,7 +13,13 @@ foreach (var car in _carManager.GetCarsByBrandId(2))
 }
 
 Console.WriteLine("------------------Sisteme araç eklemek------------------");
-_carManager.Add(new Car { BrandId = 4, ColorId = 2, DailyPrice = 1000, Description = "Golf 1.6 GTI", ModelYear = 2016});
+//_carManager.Add(new Car { BrandId = 4, ColorId = 2, DailyPrice = 1000, Description = "Golf 1.6 GTI", ModelYear = 2016});
+
+Console.WriteLine("------------------Sistemde ki aracı güncellemek------------------");
+//_carManager.Update(new Car { Id = 10, BrandId = 4, ColorId = 2, DailyPrice = 1200, Description = "Golf 1.6 GTI", ModelYear = 2016});
+
+Console.WriteLine("------------------Sistemden araç silmek------------------");
+//_carManager.Delete(new Car { Id = 12});
 
 
 Console.WriteLine("---------------------ColorId ye göre listelemek----------------------------");

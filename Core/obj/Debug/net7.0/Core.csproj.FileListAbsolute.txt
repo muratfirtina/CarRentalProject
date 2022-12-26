@@ -1,0 +1,12 @@
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/bin/Debug/net7.0/Core.deps.json
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/bin/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/bin/Debug/net7.0/Core.pdb
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.csproj.AssemblyReference.cache
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.AssemblyInfoInputs.cache
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.AssemblyInfo.cs
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.csproj.CoreCompileInputs.cache
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/refint/Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/Core.pdb
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/Debug/net7.0/ref/Core.dll

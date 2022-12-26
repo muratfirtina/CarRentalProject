@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj": {}
+  },
+  "projects": {
+    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+        "packagesPath": "/Users/muratfirtina/.nuget/packages/",
+        "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

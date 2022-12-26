@@ -1,44 +1,31 @@
-using System.Linq.Expressions;
+using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using Entities.Concrete;
-using Microsoft.EntityFrameworkCore;
+using Entities.Concrete.DTOs;
 
 namespace DataAccess.Concrete.EntityFramework;
 
-public class EfCarDal : ICarDal
+public class EfCarDal : EfEntitiyRepositoryBase<Car,CarRentalContext>, ICarDal
 {
-    DbContext _context = new CarRentalContext();
-
-    public Car get(Expression<Func<Car, bool>> filter)
+    public List<CarDetailDto> GetCarDetails()
     {
-        return _context.Set<Car>().SingleOrDefault(filter);
-    }
-
-    public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
-    {
-        return filter == null ? 
-            _context.Set<Car>().ToList() 
-            : _context.Set<Car>().Where(filter).ToList();
-    }
-
-    public void Add(Car entity)
-    {
-        var addedEntity = _context.Entry(entity);
-            addedEntity.State = EntityState.Added;
-            _context.SaveChanges();
-    }
-
-    public void Update(Car entity)
-    {
-        var updatedEntity = _context.Entry(entity);
-            updatedEntity.State = EntityState.Modified;
-            _context.SaveChanges();
-    }
-
-    public void Delete(Car entity)
-    {
-        var deletedEntity = _context.Entry(entity);
-            deletedEntity.State = EntityState.Deleted;
-            _context.SaveChanges();
+        using (CarRentalContext context = new CarRentalContext())
+        {
+            var result = from c in context.Cars
+                join b in context.Brands on c.BrandId equals b.BrandId
+                join co in context.Colors on c.ColorId equals co.ColorId
+                select new CarDetailDto
+                         {
+                             CarId = c.Id,
+                             BrandName = b.BrandName,
+                             ColorName = co.ColorName,
+                             DailyPrice = c.DailyPrice,
+                             CarName = c.Description,
+                         };
+            return result.ToList();
+        }
+        {
+            
+        }
     }
 }
