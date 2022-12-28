@@ -5,7 +5,7 @@ using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework;
 
-public class EfBrandDal : EfEntitiyRepositoryBase<Brand,CarRentalContext>, IBrandDal
+public class EfBrandDal : EfEntityRepositoryBase<Brand,CarRentalContext>, IBrandDal
 {
     
 }
