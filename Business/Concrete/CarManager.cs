@@ -61,7 +61,7 @@ public class CarManager : ICarService
         
         if (car.Description.Length >= 2 && car.DailyPrice > 0)
         {
-            _carDal.Add(car);
+            _carDal.Update(car);
             return new SuccessResult(Messages.CarUpdated);
         }
         else
@@ -87,5 +87,10 @@ public class CarManager : ICarService
             return new SuccessDataResult<List<CarDetailDto>>( _carDal.GetCarDetails());
         }
         
+    }
+
+    public IDataResult<CarDetailDto> GetCarDetailsById(int id)
+    {
+        return new SuccessDataResult<CarDetailDto>( _carDal.GetCarDetailsById(id));
     }
 }

@@ -16,4 +16,6 @@ public interface ICarService
     IResult Update(Car car);
     IResult Delete(Car car);
     IDataResult<List<CarDetailDto>> GetCarDetails();
+    IDataResult<CarDetailDto>GetCarDetailsById(int id);
+    
 }
