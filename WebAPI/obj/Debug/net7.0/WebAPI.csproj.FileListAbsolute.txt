@@ -257,3 +257,8 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Core.pdb
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/DataAccess.pdb
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Entities.pdb
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Autofac.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Autofac.Extensions.DependencyInjection.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Autofac.Extras.DynamicProxy.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Castle.Core.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/FluentValidation.dll
