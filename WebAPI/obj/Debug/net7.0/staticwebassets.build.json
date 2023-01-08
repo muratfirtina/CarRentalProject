@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
+  "Hash": "wTOecpKlRtNdVabZ2wDeZGsFNJ9rrQJcJpsJAe/wWtw=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPI/wwwroot",
+      "Source": "WebAPI",
+      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

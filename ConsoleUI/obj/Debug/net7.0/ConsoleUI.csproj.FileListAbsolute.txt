@@ -63,3 +63,9 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Autofac.Extras.DynamicProxy.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Castle.Core.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/FluentValidation.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.AspNetCore.Http.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Abstractions.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.AspNetCore.Http.Features.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.AspNetCore.WebUtilities.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Extensions.ObjectPool.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll

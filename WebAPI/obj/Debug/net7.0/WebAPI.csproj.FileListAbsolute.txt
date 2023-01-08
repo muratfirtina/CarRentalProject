@@ -262,3 +262,4 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Autofac.Extras.DynamicProxy.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Castle.Core.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/FluentValidation.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/WebAPI.staticwebassets.runtime.json

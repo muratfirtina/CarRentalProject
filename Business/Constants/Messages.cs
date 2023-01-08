@@ -37,4 +37,8 @@ public class Messages
     public static string RentDateUpdated = "Araç kiralama tarihi güncellendi";
     public static string RentalNotUpdated = "Araç kiralama işlemi güncellenemedi";
     public static string RentalListed = "Araç kiralama işlemleri listelendi";
+    public static string CarImageAdded = "Araç fotoğrafı eklendi";
+    public static string CarImageDeleted = "Araç fotoğrafı silindi";
+    public static string CarImageUpdated = "Araç fotoğrafı güncellendi";
+    public static string CarImageLimitExceeded = "Araç fotoğrafı limiti aşıldı";
 }

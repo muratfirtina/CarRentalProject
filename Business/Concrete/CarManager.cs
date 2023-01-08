@@ -84,14 +84,7 @@ public class CarManager : ICarService
 
     public IDataResult<List<CarDetailDto>> GetCarDetails()
     {
-        if (DateTime.Now.Hour == 15)
-        {
-            return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
-        }
-        {
-            return new SuccessDataResult<List<CarDetailDto>>( _carDal.GetCarDetails());
-        }
-        
+        return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails());
     }
 
     public IDataResult<CarDetailDto> GetCarDetailsById(int id)
