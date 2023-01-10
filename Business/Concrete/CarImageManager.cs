@@ -3,7 +3,7 @@ using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Core.Utilities.Business;
-using Core.Utilities.Helpers.FileHelpers;
+using Core.Utilities.Helpers;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -21,7 +21,7 @@ public class CarImageManager : ICarImageService
     }
 
     [ValidationAspect(typeof(CarImageValidator))]
-    public IResult Add(IFormFile file,CarImage carImage)
+    public IResult Add(CarImage carImage, IFormFile file)
     {
         IResult result = BusinessRules.Run(CheckIfImageLimitExceeded(carImage.CarId));
 
@@ -30,7 +30,7 @@ public class CarImageManager : ICarImageService
             return result;
         }
 
-        carImage.ImagePath = ImageHelper.Add(file);
+        carImage.ImagePath = FileHelper.Add(file);
         carImage.Date = DateTime.Now;
         _carImageDal.Add(carImage);
         return new SuccessResult(Messages.CarImageAdded);
@@ -43,9 +43,10 @@ public class CarImageManager : ICarImageService
         return new SuccessResult(Messages.CarImageDeleted);
     }
 
-    public IResult Update(IFormFile file,CarImage carImage)
+    [ValidationAspect(typeof(CarImageValidator))]
+    public IResult Update(CarImage carImage, IFormFile file)
     {
-        carImage.ImagePath = ImageHelper.Update(_carImageDal.get(p => p.Id == carImage.Id).ImagePath, file);
+        carImage.ImagePath = FileHelper.Update(_carImageDal.get(c => c.Id == carImage.Id).ImagePath ,file);
         carImage.Date = DateTime.Now;
         _carImageDal.Update(carImage);
         return new SuccessResult(Messages.CarImageUpdated);
@@ -63,8 +64,15 @@ public class CarImageManager : ICarImageService
 
     public IDataResult<List<CarImage>> GetImagesByCarId(int carId)
     {
+        var carImage = _carImageDal.GetAll().Where(c => c.CarId == carId).ToList();
+        if (carImage.Count == 0)
+        {
+            List<CarImage> carImages = new List<CarImage>();
+            carImages.Add(new CarImage { CarId = carId, ImagePath = @"\Images\defaultcar.png", Date = DateTime.Now });
+            return new SuccessDataResult<List<CarImage>>(carImages);
+        }
         return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId));
-        ;
+        
     }
 
     private IResult CheckIfImageLimitExceeded(int carId)
@@ -77,4 +85,5 @@ public class CarImageManager : ICarImageService
 
         return new SuccessResult();
     }
+
 }

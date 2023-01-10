@@ -7,13 +7,9 @@ namespace Business.ValidationRules.FluentValidation;
 
 public class CarImageValidator : AbstractValidator<CarImage>
 {
-    ICarImageService _carImageService;
-    public CarImageValidator(ICarImageService carImageService)
+    public CarImageValidator()
     {
-        _carImageService = carImageService;
-        RuleFor(c => c.CarId).NotEmpty();
-        RuleFor(c => c.ImagePath).NotEmpty();
-        
+        RuleFor(cI => cI.CarId).NotEmpty();
     }
     
 }

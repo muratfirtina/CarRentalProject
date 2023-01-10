@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wTOecpKlRtNdVabZ2wDeZGsFNJ9rrQJcJpsJAe/wWtw=",
+  "Hash": "GFUIsYxjRWzLCSrSEObxqNblSsov1jRnWfqvsh2kWKk=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -15,5 +15,57 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/.DS_Store",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/Images/.DS_Store",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Images/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/.DS_Store"
+    },
+    {
+      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/Images/deafultcar.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Images/deafultcar.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/deafultcar.png"
+    }
+  ]
 }

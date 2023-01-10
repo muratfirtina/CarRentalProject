@@ -1,9 +1,9 @@
 using Core.Utilities.Results;
 using Microsoft.AspNetCore.Http;
 
-namespace Core.Utilities.Helpers.FileHelpers;
+namespace Core.Utilities.Helpers;
 
-public class ImageHelper
+public class FileHelper
 {
     public static string Add(IFormFile file)
     {
@@ -34,7 +34,7 @@ public class ImageHelper
         var result = newPath(file);
         try
         {
-            if (file.Length != 0 || file.Length !> 20971520 || IsValidImage(file))
+            if (file.Length >0)
             {
                 using (var stream = new FileStream(sourcePath, FileMode.Create))
                 {
@@ -68,8 +68,9 @@ public class ImageHelper
     {
         FileInfo fileInfo = new FileInfo(file.FileName);
         string fileExtansion = fileInfo.Extension;
+        
 
-        string path = Environment.CurrentDirectory + @"\wwwroot\Images";
+        string path = Environment.CurrentDirectory + @"\wwwroot\";
         var newPath = Guid.NewGuid().ToString("N") + fileExtansion;
 
         string result = $@"{path}\{newPath}";

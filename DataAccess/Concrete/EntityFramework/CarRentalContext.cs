@@ -12,6 +12,13 @@ public class CarRentalContext : DbContext
         AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true); 
         //bu satır PostgreSql'de datetime tipindeki verileri okumak için eklenmiştir.
     }
+    
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Customer>().HasNoKey();//Customer tablosu için bir primary key oluşturulmamıştır. //
+                                                   //Bu satır bu durumu düzeltmek için eklenmiştir.
+                                                   ////Çünkü CustomerId UserId ye bağlıdır.
+    }
 
     public DbSet<Car> Cars { get; set; }
     public DbSet<Brand> Brands { get; set; }
