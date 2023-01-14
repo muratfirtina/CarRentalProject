@@ -46,7 +46,7 @@ public class CarImageManager : ICarImageService
     [ValidationAspect(typeof(CarImageValidator))]
     public IResult Update(CarImage carImage, IFormFile file)
     {
-        carImage.ImagePath = FileHelper.Update(_carImageDal.get(c => c.Id == carImage.Id).ImagePath ,file);
+        carImage.ImagePath = FileHelper.Update(_carImageDal.Get(c => c.Id == carImage.Id).ImagePath ,file);
         carImage.Date = DateTime.Now;
         _carImageDal.Update(carImage);
         return new SuccessResult(Messages.CarImageUpdated);
@@ -59,7 +59,7 @@ public class CarImageManager : ICarImageService
 
     public IDataResult<CarImage> GetById(int carImageId)
     {
-        return new SuccessDataResult<CarImage>(_carImageDal.get(c => c.Id == carImageId));
+        return new SuccessDataResult<CarImage>(_carImageDal.Get(c => c.Id == carImageId));
     }
 
     public IDataResult<List<CarImage>> GetImagesByCarId(int carId)

@@ -1,5 +1,6 @@
 using Business.Abstract;
 using Business.Constants;
+using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -17,15 +18,8 @@ public class UserManager : IUserService
 
     public IResult Add(User user)
     {
-        if (user.Email == "" || user.FirstName == "" || user.LastName == "" || user.Password == "")
-        {
-            return new ErrorResult(Messages.UsersNotAdded, Messages.UsersInformationNotNull);
-        }
-        else
-        {
-            _userDal.Add(user);
-            return new SuccessResult(Messages.UserAdded);
-        }
+        _userDal.Add(user);
+        return new SuccessResult(Messages.UserAdded);
         
     }
 
@@ -37,15 +31,13 @@ public class UserManager : IUserService
 
     public IResult Update(User user)
     {
-        if (user.Email == "" || user.FirstName == "" || user.LastName == "" || user.Password == "")
-        {
-            return new ErrorResult(Messages.UsersNotUpdated, Messages.UsersInformationNotNull);
-        }
-        else
-        {
-            _userDal.Update(user);
-            return new SuccessResult(Messages.UserUpdated);
-        }
+        var _user = _userDal.Get(u => u.Id == user.Id);
+        _user.FirstName = user.FirstName;
+        _user.LastName = user.LastName;
+        _user.Status = user.Status;
+
+        _userDal.Update(_user);
+        return new SuccessResult();
     }
 
     public IDataResult<List<User>> GetAll()
@@ -55,6 +47,16 @@ public class UserManager : IUserService
 
     public IDataResult<User> GetById(int userId)
     {
-        return new SuccessDataResult<User>(_userDal.get(u => u.Id == userId), Messages.UserListed);
+        return new SuccessDataResult<User>(_userDal.Get(u => u.Id == userId), Messages.UserListed);
+    }
+
+    public IDataResult<User> GetByMail(string email)
+    {
+        return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
+    }
+
+    public IDataResult<List<OperationClaim>> GetClaims(User user)
+    {
+        return new SuccessDataResult<List<OperationClaim>>(_userDal.GetClaims(user));
     }
 }

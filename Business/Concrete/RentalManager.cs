@@ -55,7 +55,7 @@ public class RentalManager : IRentalService
 
     public IDataResult<Rental> GetById(int rentalId)
     {
-        return new SuccessDataResult<Rental>(_rentalDal.get(r => r.Id == rentalId));
+        return new SuccessDataResult<Rental>(_rentalDal.Get(r => r.Id == rentalId));
     }
 
     public IDataResult<List<Rental>> GetRentalsByCustomerId(int customerId)

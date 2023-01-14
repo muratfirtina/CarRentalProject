@@ -1,3 +1,4 @@
+using Core.Entities.Concrete;
 using Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,7 @@ public class CarRentalContext : DbContext
     {
         modelBuilder.Entity<Customer>().HasNoKey();//Customer tablosu için bir primary key oluşturulmamıştır. //
                                                    //Bu satır bu durumu düzeltmek için eklenmiştir.
-                                                   ////Çünkü CustomerId UserId ye bağlıdır.
+                                                   ////Çünkü CustomerId UserId ye bağlı.
     }
 
     public DbSet<Car> Cars { get; set; }
@@ -27,5 +28,7 @@ public class CarRentalContext : DbContext
     public DbSet<Rental> Rentals { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<CarImage> CarImages { get; set; }
+    public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+    public DbSet<OperationClaim> OperationClaims { get; set; }
 
 }

@@ -69,3 +69,9 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.AspNetCore.WebUtilities.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Extensions.ObjectPool.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Net.Http.Headers.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/ConsoleUI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll

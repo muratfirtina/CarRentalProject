@@ -34,7 +34,7 @@ public class ColorManager:IColorService
 
     public IDataResult<Color> GetByColorId(int colorId)
     {
-        return new SuccessDataResult<Color>(_colorDal.get(c => c.ColorId == colorId));
+        return new SuccessDataResult<Color>(_colorDal.Get(c => c.ColorId == colorId));
     }
 
     public IResult Update(Color color)

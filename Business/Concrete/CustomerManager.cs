@@ -55,11 +55,11 @@ public class CustomerManager : ICustomerService
 
     public IDataResult<Customer> GetCustomerById(int customerId)
     {
-        return new SuccessDataResult<Customer>(_customerDal.get(c => c.UserId == customerId));
+        return new SuccessDataResult<Customer>(_customerDal.Get(c => c.UserId == customerId));
     }
 
     public IDataResult<Customer> GetCustomerByUserId(int userId)
     {
-        return new SuccessDataResult<Customer>(_customerDal.get(c => c.UserId == userId));
+        return new SuccessDataResult<Customer>(_customerDal.Get(c => c.UserId == userId));
     }
 }

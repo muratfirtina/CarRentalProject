@@ -20,7 +20,7 @@ public class CarManager : ICarService
 
     public IDataResult<Car> GetById(int Id)
     {
-        return new SuccessDataResult<Car>(_carDal.get(c => c.Id == Id), Messages.CarListed);
+        return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == Id), Messages.CarListed);
 
     }
 

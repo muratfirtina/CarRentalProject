@@ -1,5 +1,6 @@
 ﻿using System.Threading.Channels;
 using Business.Concrete;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -56,7 +57,7 @@ Console.WriteLine(_colorManager.GetByColorId(1).Data.ColorName);
 
 Console.WriteLine("---------------------Kullanıcı eklemek----------------------------");
 //AddUser();
-void AddUser()
+/*void AddUser()
 {
     UserManager _userManager = new UserManager(new EfUserDal());
     var result = _userManager.Add(new User()
@@ -70,7 +71,7 @@ void AddUser()
     {
         Console.WriteLine(result.Message);
     }
-}
+}*/
 
 Console.WriteLine("---------------------Kullanıcı silmek----------------------------");
 //DeleteUser();

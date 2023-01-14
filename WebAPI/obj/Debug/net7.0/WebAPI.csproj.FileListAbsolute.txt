@@ -263,3 +263,12 @@
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Castle.Core.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/FluentValidation.dll
 /Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/WebAPI.staticwebassets.runtime.json
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Logging.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Tokens.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.dll
+/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
