@@ -1,6 +1,7 @@
 using Business.Abstract;
 using Business.Constants;
 using Core.Entities.Concrete;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using Core.Utilities.Security.Hashing;
 using Core.Utilities.Security.JWT;
@@ -21,17 +22,12 @@ public class AuthManager:IAuthService
 
     public IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password)
     {
-        byte[] passwordHash, passwordSalt;
-        HashingHelper.CreatePasswordHash(password,out passwordHash,out passwordSalt);
-        var user = new User
+        IResult result = BusinessRules.Run(UserExists(userForRegisterDto.Email));
+        if (result != null)
         {
-            Email = userForRegisterDto.Email,
-            FirstName = userForRegisterDto.FirstName,
-            LastName = userForRegisterDto.LastName,
-            PasswordHash = passwordHash,
-            PasswordSalt = passwordSalt,
-            Status = true
-        };
+            return new ErrorDataResult<User>(result.Message);
+        }
+        User user = CreateUser(userForRegisterDto, password).Data;
         _userService.Add(user);
         return  new SuccessDataResult<User>(user,Messages.UserRegistered);
     }
@@ -66,5 +62,21 @@ public class AuthManager:IAuthService
         var claims = _userService.GetClaims(user).Data;
         var accessToken = _tokenHelper.CreateToken(user,claims);
         return new SuccessDataResult<AccessToken>(accessToken,Messages.AccessTokenCreated);
+    }
+    
+    public IDataResult<User> CreateUser(UserForRegisterDto userForRegisterDto,string password)
+    {
+        byte[] passwordHash, passwordSalt;
+        HashingHelper.CreatePasswordHash(userForRegisterDto.Password,out passwordHash,out passwordSalt);
+        var user = new User
+        {
+            Email = userForRegisterDto.Email,
+            FirstName = userForRegisterDto.FirstName,
+            LastName = userForRegisterDto.LastName,
+            PasswordHash = passwordHash,
+            PasswordSalt = passwordSalt,
+            Status = true
+        };
+        return new SuccessDataResult<User>(user);
     }
 }

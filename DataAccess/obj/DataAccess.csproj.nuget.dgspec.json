@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/DataAccess.csproj": {}
+    "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj": {
+    "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+        "projectUniqueName": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+        "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj",
         "packagesPath": "/Users/muratfirtina/.nuget/packages/",
-        "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/",
+        "outputPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"
@@ -107,14 +107,14 @@
         }
       }
     },
-    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/DataAccess.csproj": {
+    "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/DataAccess.csproj",
+        "projectUniqueName": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/DataAccess.csproj",
+        "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/DataAccess.csproj",
         "packagesPath": "/Users/muratfirtina/.nuget/packages/",
-        "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/DataAccess/obj/",
+        "outputPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"
@@ -129,8 +129,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj": {
-                "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj"
+              "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/Entities.csproj": {
+                "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/Entities.csproj"
               }
             }
           }
@@ -170,14 +170,14 @@
         }
       }
     },
-    "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj": {
+    "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj",
+        "projectUniqueName": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/Entities.csproj",
+        "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/Entities.csproj",
         "packagesPath": "/Users/muratfirtina/.nuget/packages/",
-        "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Entities/obj/",
+        "outputPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"
@@ -192,8 +192,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj": {
-                "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj"
+              "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj": {
+                "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj"
               }
             }
           }

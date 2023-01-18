@@ -6619,11 +6619,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+      "projectUniqueName": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj",
       "projectName": "Core",
-      "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/Core.csproj",
+      "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/Core.csproj",
       "packagesPath": "/Users/muratfirtina/.nuget/packages/",
-      "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Core/obj/",
+      "outputPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"

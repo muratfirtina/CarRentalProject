@@ -11500,11 +11500,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/WebAPI.csproj",
+      "projectUniqueName": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/WebAPI.csproj",
+      "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/WebAPI.csproj",
       "packagesPath": "/Users/muratfirtina/.nuget/packages/",
-      "outputPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/obj/",
+      "outputPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/muratfirtina/.nuget/NuGet/NuGet.Config"
@@ -11519,8 +11519,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/Business.csproj": {
-              "projectPath": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/Business/Business.csproj"
+            "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Business/Business.csproj": {
+              "projectPath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/Business/Business.csproj"
             }
           }
         }
