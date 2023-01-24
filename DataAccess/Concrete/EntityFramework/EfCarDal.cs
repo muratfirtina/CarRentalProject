@@ -50,6 +50,8 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                              ColorName = co.ColorName,
                              DailyPrice = c.DailyPrice,
                              CarName = c.Description,
+                             ModelYear = c.ModelYear,
+                             CarImages = context.CarImages.Where(i => i.CarId == c.Id).ToList()
                          };
             return result.SingleOrDefault();
         }
