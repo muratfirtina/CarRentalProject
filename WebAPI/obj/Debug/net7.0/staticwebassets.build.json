@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GFUIsYxjRWzLCSrSEObxqNblSsov1jRnWfqvsh2kWKk=",
+  "Hash": "c/DT6bn9m44K+dVFDaalzaE2PyzA1mdxs7jEahbRYbs=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI/wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/.DS_Store",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/.DS_Store",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
       "RelativePath": ".DS_Store",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
-      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/Images/.DS_Store",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/.DS_Store",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Images/.DS_Store",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot/Images/.DS_Store"
     },
     {
-      "Identity": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/Images/deafultcar.png",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/deafultcar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/muratfirtina/Documents/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Images/deafultcar.png",
       "AssetKind": "All",

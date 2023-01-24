@@ -7,6 +7,14 @@ namespace DataAccess.Concrete.EntityFramework;
 
 public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
 {
+    public List<Car> GetAll()
+    {
+        using (CarRentalContext context = new CarRentalContext())
+        {
+            return context.Set<Car>().OrderBy(c=>c.Id).ToList();
+
+        }
+    }
     public List<CarDetailDto> GetCarDetails()
     {
         using (CarRentalContext context = new CarRentalContext())

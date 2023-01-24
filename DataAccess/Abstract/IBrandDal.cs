@@ -5,5 +5,5 @@ namespace DataAccess.Abstract;
 
 public interface IBrandDal :IEntityRepository<Brand>
 {
-    
+    public List<Brand> GetAll();
 }
