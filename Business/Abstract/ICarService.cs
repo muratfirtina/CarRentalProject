@@ -17,5 +17,6 @@ public interface ICarService
     IResult Delete(Car car);
     IDataResult<List<CarDetailDto>> GetCarDetails();
     IDataResult<CarDetailDto>GetCarDetailsById(int id);
-    
+
+    IDataResult<List<Car>> GetCarsByBrandAndColor(int brandId, int colorId);
 }

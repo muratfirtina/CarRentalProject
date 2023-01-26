@@ -25,10 +25,11 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 orderby c.Id
                 select new CarDetailDto
                          {
-                             CarId = c.Id,
+                             Id = c.Id,
                              BrandName = b.BrandName,
                              ColorName = co.ColorName,
                              DailyPrice = c.DailyPrice,
+                             ModelYear = c.ModelYear,
                              CarName = c.Description,
                          };
             return result.ToList();
@@ -45,7 +46,7 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 where c.Id == Id
                 select new CarDetailDto
                          {
-                             CarId = c.Id,
+                             Id = c.Id,
                              BrandName = b.BrandName,
                              ColorName = co.ColorName,
                              DailyPrice = c.DailyPrice,

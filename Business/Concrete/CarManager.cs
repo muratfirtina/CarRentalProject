@@ -93,4 +93,9 @@ public class CarManager : ICarService
     {
         return new SuccessDataResult<CarDetailDto>( _carDal.GetCarDetailsById(id));
     }
+
+    public IDataResult<List<Car>> GetCarsByBrandAndColor(int brandId, int colorId)
+    {
+        return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.BrandId == brandId && c.ColorId == colorId));
+    }
 }
