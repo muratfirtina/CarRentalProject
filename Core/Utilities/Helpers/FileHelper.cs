@@ -70,11 +70,11 @@ public class FileHelper
         string fileExtansion = fileInfo.Extension;
         
 
-        string path = Environment.CurrentDirectory + @"\wwwroot\";
+        string path = Environment.CurrentDirectory + @"\wwwroot\images";
         var newPath = Guid.NewGuid().ToString("N") + fileExtansion;
 
         string result = $@"{path}\{newPath}";
-        return (result, $"\\Images\\{newPath}");
+        return (result, $"\\images\\{newPath}");
     }
     
     private static bool IsValidImage(IFormFile file)

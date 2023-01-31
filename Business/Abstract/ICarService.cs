@@ -8,8 +8,8 @@ public interface ICarService
 {
     IDataResult<Car> GetById(int id);
     IDataResult<List<Car>> GetAll();
-    IDataResult<List<Car>> GetCarsByBrandId(int id);
-    IDataResult<List<Car>> GetCarsByColorId(int id);
+    IDataResult<List<CarDetailDto>> GetCarsByBrandId(int brandId);
+    IDataResult<List<CarDetailDto>> GetCarsByColorId(int colorId);
     
     IDataResult<List<Car>> GetByDailyPrice(decimal min, decimal max);
     IResult Add(Car car);
@@ -18,5 +18,5 @@ public interface ICarService
     IDataResult<List<CarDetailDto>> GetCarDetails();
     IDataResult<CarDetailDto>GetCarDetailsById(int id);
 
-    IDataResult<List<Car>> GetCarsByBrandAndColor(int brandId, int colorId);
+    IDataResult<List<CarDetailDto>> GetCarsByBrandAndColor(int brandId, int colorId);
 }

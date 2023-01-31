@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using Core.DataAccess.EntityFramework;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -15,7 +16,7 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
 
         }
     }
-    public List<CarDetailDto> GetCarDetails()
+    public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto,bool>>filter=null)
     {
         using (CarRentalContext context = new CarRentalContext())
         {
@@ -26,13 +27,18 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 select new CarDetailDto
                          {
                              Id = c.Id,
+                             BrandId = b.BrandId,
+                                ColorId = co.ColorId,
                              BrandName = b.BrandName,
                              ColorName = co.ColorName,
                              DailyPrice = c.DailyPrice,
                              ModelYear = c.ModelYear,
                              CarName = c.Description,
+                             CarImages = context.CarImages.Where(ci => ci.CarId == c.Id).ToList()
                          };
-            return result.ToList();
+            return filter == null
+                ? result.ToList()
+                : result.Where(filter).ToList();
         }
         
     }
@@ -47,12 +53,30 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 select new CarDetailDto
                          {
                              Id = c.Id,
+                                BrandId = b.BrandId,
+                                ColorId = co.ColorId,
                              BrandName = b.BrandName,
                              ColorName = co.ColorName,
                              DailyPrice = c.DailyPrice,
                              CarName = c.Description,
                              ModelYear = c.ModelYear,
-                             CarImages = context.CarImages.Where(i => i.CarId == c.Id).ToList()
+                             CarImages = ((from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
+                                 select new CarImage
+                                 {
+                                     Id = ci.Id,
+                                     CarId = ci.CarId,
+                                     ImagePath = ci.ImagePath,
+                                     Date = ci.Date
+                                 }).ToList()).Count == 0 
+                                 ? new List<CarImage> {new CarImage {Id = -1, CarId = c.Id, Date = DateTime.Now ,ImagePath = "defaultcar.png"}} 
+                                 : (from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
+                                     select new CarImage
+                                     {
+                                         Id = ci.Id,
+                                         CarId = ci.CarId,
+                                         ImagePath = ci.ImagePath,
+                                         Date = ci.Date
+                                     }).ToList()
                          };
             return result.SingleOrDefault();
         }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "c/DT6bn9m44K+dVFDaalzaE2PyzA1mdxs7jEahbRYbs=",
+  "Hash": "ak1Tt32MABheclI/NY9EM2dS0yjZKDeXSva7VIw2ikE=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "wwwroot/Images/.DS_Store"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/deafultcar.png",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/defaultcar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/deafultcar.png",
+      "RelativePath": "Images/defaultcar.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/deafultcar.png"
+      "OriginalItemSpec": "wwwroot/Images/defaultcar.png"
     }
   ]
 }

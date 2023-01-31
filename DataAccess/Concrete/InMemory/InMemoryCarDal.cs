@@ -37,6 +37,11 @@ public class InMemoryCarDal : ICarDal
         return _cars;
     }
 
+    public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
+    {
+        throw new NotImplementedException();
+    }
+
     public Car Get(Expression<Func<Car, bool>> filter)
     {
         throw new NotImplementedException();

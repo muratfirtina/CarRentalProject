@@ -18,4 +18,20 @@
       <ProjectReference Include="..\Business\Business.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\12c589c7e4874e2bbe6d1eaffb09e2a9.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\22daab0ba04f48f79378f7ee2a1f027a.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\269778aabefe46a38eb2314b258c65cc.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\3aa16bdc1e7f4328a649d49aa52bec64.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\407cbdd85a194ca8a6e4fb4289d09232.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\45af6c22dcc642a1842a3da3d2c511a4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\a18343c95fae45ce818b52e7640a6de7.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\cfc8921a7eae46dc80e5401882ee5f95.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\e24050f075e1440c9f0a1036cc8ffed1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\Images\f1f36f25097e44df9283d1037f23abe4.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\\a3e5d69087274bb4aefd471ba2a72016.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPI\wwwroot\\c5577551fd2748bb8186fb55e9595d29.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\Images\WebAPIWebAPI\wwwroot\Images\6925ea1f6fda470781f7a08b51ca1318.jpg" />
+    </ItemGroup>
+
 </Project>

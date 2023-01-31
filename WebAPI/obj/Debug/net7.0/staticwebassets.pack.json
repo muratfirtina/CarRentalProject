@@ -9,8 +9,8 @@
       "PackagePath": "staticwebassets/Images/.DS_Store"
     },
     {
-      "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/deafultcar.png",
-      "PackagePath": "staticwebassets/Images/deafultcar.png"
+      "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/defaultcar.png",
+      "PackagePath": "staticwebassets/Images/defaultcar.png"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

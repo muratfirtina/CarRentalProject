@@ -23,7 +23,7 @@ else
 Console.WriteLine("------------------BrandId ye göre Araç listelemek------------------");
 foreach (var car in _carManager.GetCarsByBrandId(2).Data)
 {
-    Console.WriteLine(car.Description);
+    Console.WriteLine(car.Id);
 }
 
 Console.WriteLine("------------------Sisteme araç eklemek------------------");
@@ -39,7 +39,7 @@ Console.WriteLine("------------------Sistemden araç silmek------------------");
 Console.WriteLine("---------------------ColorId ye göre listelemek----------------------------");
 foreach(var car in _carManager.GetCarsByColorId(1).Data)
 {
-    Console.WriteLine(car.Description);
+    Console.WriteLine(car.Id);
     
 }
 

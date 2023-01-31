@@ -30,14 +30,14 @@ public class CarManager : ICarService
         return new SuccessDataResult<List<Car>>( _carDal.GetAll(), Messages.CarsListed);
     }
 
-    public IDataResult<List<Car>> GetCarsByBrandId(int id)
+    public IDataResult<List<CarDetailDto>> GetCarsByBrandId(int brandId)
     {
-        return new SuccessDataResult<List<Car>>( _carDal.GetAll(c=>c.BrandId==id));
+        return new SuccessDataResult<List<CarDetailDto>>( _carDal.GetCarDetails(c=>c.BrandId==brandId));
     }
 
-    public IDataResult<List<Car>> GetCarsByColorId(int id)
+    public IDataResult<List<CarDetailDto>> GetCarsByColorId(int colorId)
     {
-        return new SuccessDataResult<List<Car>>(_carDal.GetAll(c=>c.ColorId==id));
+        return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(c=>c.ColorId==colorId));
     }
 
     public IDataResult<List<Car>> GetByDailyPrice(decimal min, decimal max)
@@ -91,11 +91,11 @@ public class CarManager : ICarService
 
     public IDataResult<CarDetailDto> GetCarDetailsById(int id)
     {
-        return new SuccessDataResult<CarDetailDto>( _carDal.GetCarDetailsById(id));
+        return new SuccessDataResult<CarDetailDto>( _carDal.GetCarDetails(c => c.Id == id).SingleOrDefault());
     }
 
-    public IDataResult<List<Car>> GetCarsByBrandAndColor(int brandId, int colorId)
+    public IDataResult<List<CarDetailDto>> GetCarsByBrandAndColor(int brandId, int colorId)
     {
-        return new SuccessDataResult<List<Car>>(_carDal.GetAll(c => c.BrandId == brandId && c.ColorId == colorId));
+        return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(c => c.BrandId == brandId && c.ColorId == colorId));
     }
 }
