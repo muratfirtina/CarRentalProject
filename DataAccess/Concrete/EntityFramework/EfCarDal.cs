@@ -35,7 +35,9 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                              ModelYear = c.ModelYear,
                              CarName = c.Description,
                              CarImages = context.CarImages.Where(ci => ci.CarId == c.Id).ToList()
+                             
                          };
+            
             return filter == null
                 ? result.ToList()
                 : result.Where(filter).ToList();

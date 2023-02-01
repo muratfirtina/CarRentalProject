@@ -7,6 +7,7 @@ using Core.Utilities.Helpers;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.Concrete.DTOs;
 using Microsoft.AspNetCore.Http;
 
 namespace Business.Concrete;
@@ -21,7 +22,7 @@ public class CarImageManager : ICarImageService
     }
 
     [ValidationAspect(typeof(CarImageValidator))]
-    public IResult Add(CarImage carImage, IFormFile file)
+    public IResult Add(IFormFile file, CarImage carImage)
     {
         IResult result = BusinessRules.Run(CheckIfImageLimitExceeded(carImage.CarId));
 
@@ -30,11 +31,35 @@ public class CarImageManager : ICarImageService
             return result;
         }
 
-        carImage.ImagePath = FileHelper.Add(file);
+        carImage.ImagePath = FileHelper.Add(file).Message;
         carImage.Date = DateTime.Now;
         _carImageDal.Add(carImage);
         return new SuccessResult(Messages.CarImageAdded);
     }
+    
+    /*{
+        var ruleResult = BusinessRules.Run(CheckIfImageLimitExceeded(carImage.CarId));
+        if (!ruleResult.Success)
+        {
+            return new ErrorResult(ruleResult.Message);
+        }
+
+        Adding Image
+        var imageResult = FileHelper.Add(carImageUploadDto.file);
+        CarImage carImage = new CarImage
+        {
+            CarId = carImageUploadDto.CarId,
+            ImagePath = imageResult.Message,
+            Date = DateTime.Now
+        };
+        
+        if (!imageResult.Success)
+        {
+            return new ErrorResult(imageResult.Message);
+        }
+        _carImageDal.Add(carImage);
+        return new SuccessResult(Messages.CarImageAdded);
+    }*/
 
     public IResult Delete(CarImage carImage)
     {
@@ -44,12 +69,14 @@ public class CarImageManager : ICarImageService
     }
 
     [ValidationAspect(typeof(CarImageValidator))]
-    public IResult Update(CarImage carImage, IFormFile file)
+    public IResult Update(IFormFile file, CarImage carImage)
     {
-        carImage.ImagePath = FileHelper.Update(_carImageDal.Get(c => c.Id == carImage.Id).ImagePath ,file);
-        carImage.Date = DateTime.Now;
-        _carImageDal.Update(carImage);
-        return new SuccessResult(Messages.CarImageUpdated);
+        {
+            carImage.ImagePath = FileHelper.Update(file, carImage.ImagePath).Message;
+            carImage.Date = DateTime.Now;
+            _carImageDal.Update(carImage);
+            return new SuccessResult(Messages.CarImageUpdated);
+        }
     }
     
     public IDataResult<List<CarImage>> GetAll()
@@ -71,7 +98,7 @@ public class CarImageManager : ICarImageService
             carImages.Add(new CarImage { CarId = carId, ImagePath = @"\Images\defaultcar.png", Date = DateTime.Now });
             return new SuccessDataResult<List<CarImage>>(carImages);
         }
-        return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId));
+        return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId).ToList());
         
     }
 
