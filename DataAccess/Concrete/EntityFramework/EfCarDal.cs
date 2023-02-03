@@ -34,7 +34,23 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                              DailyPrice = c.DailyPrice,
                              ModelYear = c.ModelYear,
                              CarName = c.Description,
-                             CarImages = context.CarImages.Where(ci => ci.CarId == c.Id).ToList()
+                             CarImages = ((from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
+                                 select new CarImage
+                                 {
+                                     Id = ci.Id,
+                                     CarId = ci.CarId,
+                                     ImagePath = ci.ImagePath,
+                                     Date = ci.Date
+                                 }).ToList()).Count == 0 
+                                 ? new List<CarImage> {new CarImage {Id = -1, CarId = c.Id, Date = DateTime.Now ,ImagePath = "defaultcar.png"}} 
+                                 : (from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
+                                     select new CarImage
+                                     {
+                                         Id = ci.Id,
+                                         CarId = ci.CarId,
+                                         ImagePath = ci.ImagePath,
+                                         Date = ci.Date
+                                     }).ToList()
                              
                          };
             

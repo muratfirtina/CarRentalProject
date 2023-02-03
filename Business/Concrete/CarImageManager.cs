@@ -28,7 +28,7 @@ public class CarImageManager : ICarImageService
 
         if (result != null)
         {
-            return result;
+            return new ErrorResult(Messages.CarImageLimitExceeded);
         }
 
         carImage.ImagePath = FileHelper.Add(file).Message;
@@ -72,7 +72,7 @@ public class CarImageManager : ICarImageService
     public IResult Update(IFormFile file, CarImage carImage)
     {
         {
-            carImage.ImagePath = FileHelper.Update(file, carImage.ImagePath).Message;
+            carImage.ImagePath = FileHelper.Update(carImage.ImagePath, file).Message;
             carImage.Date = DateTime.Now;
             _carImageDal.Update(carImage);
             return new SuccessResult(Messages.CarImageUpdated);

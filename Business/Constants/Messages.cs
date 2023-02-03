@@ -49,4 +49,5 @@ public class Messages
     public static string UserAlreadyExists = "Kullanıcı mevcut";
     public static string AccessTokenCreated = "Token oluşturuldu";
     public static string CarImageDoesNotFound = "Araç fotoğrafı bulunamadı";
+    
 }

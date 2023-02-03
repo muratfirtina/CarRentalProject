@@ -9,8 +9,20 @@
       "PackagePath": "staticwebassets/Images/.DS_Store"
     },
     {
+      "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/72eb324c-ea03-4246-aec5-7914f30745b0.jpeg",
+      "PackagePath": "staticwebassets/Images/72eb324c-ea03-4246-aec5-7914f30745b0.jpeg"
+    },
+    {
+      "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/b7848e71-c16c-4922-a09c-67c38a7c2c14.jpg",
+      "PackagePath": "staticwebassets/Images/b7848e71-c16c-4922-a09c-67c38a7c2c14.jpg"
+    },
+    {
       "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/defaultcar.png",
       "PackagePath": "staticwebassets/Images/defaultcar.png"
+    },
+    {
+      "Id": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/e34739f1-5554-4e8c-b04b-1f4db572062e.jpg",
+      "PackagePath": "staticwebassets/Images/e34739f1-5554-4e8c-b04b-1f4db572062e.jpg"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,4 +1,5 @@
 using Core.Entities;
+using Core.Utilities.Results;
 
 namespace Entities.Concrete;
 

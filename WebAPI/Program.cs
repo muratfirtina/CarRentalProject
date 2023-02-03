@@ -11,6 +11,7 @@ using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -41,6 +42,8 @@ builder.Services.AddSingleton<IUserDal, EfUserDal>();*/
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
 builder.Services.AddCors();
 
 var tokenOptions = builder.Configuration.GetSection("TokenOptions").Get<TokenOptions>();
@@ -65,7 +68,6 @@ builder.Services.AddDependencyResolvers(new ICoreModule[]
 {
     new CoreModule()
 });
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -79,7 +81,18 @@ app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHead
 
 app.UseHttpsRedirection();
 
+
+
+
 app.UseStaticFiles();
+
+app.UseFileServer(new FileServerOptions()
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot/images")),
+    RequestPath = new PathString("/images"),
+    EnableDirectoryBrowsing = true
+});
 
 app.UseRouting();
 
