@@ -25,34 +25,19 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 join co in context.Colors on c.ColorId equals co.ColorId
                 orderby c.Id
                 select new CarDetailDto
-                         {
-                             Id = c.Id,
-                             BrandId = b.BrandId,
-                                ColorId = co.ColorId,
-                             BrandName = b.BrandName,
-                             ColorName = co.ColorName,
-                             DailyPrice = c.DailyPrice,
-                             ModelYear = c.ModelYear,
-                             CarName = c.Description,
-                             CarImages = ((from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
-                                 select new CarImage
-                                 {
-                                     Id = ci.Id,
-                                     CarId = ci.CarId,
-                                     ImagePath = ci.ImagePath,
-                                     Date = ci.Date
-                                 }).ToList()).Count == 0 
-                                 ? new List<CarImage> {new CarImage {Id = -1, CarId = c.Id, Date = DateTime.Now ,ImagePath = "defaultcar.png"}} 
-                                 : (from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
-                                     select new CarImage
-                                     {
-                                         Id = ci.Id,
-                                         CarId = ci.CarId,
-                                         ImagePath = ci.ImagePath,
-                                         Date = ci.Date
-                                     }).ToList()
-                             
-                         };
+                {
+                    Id = c.Id,
+                    BrandId = b.BrandId,
+                    ColorId = co.ColorId,
+                    BrandName = b.BrandName,
+                    ColorName = co.ColorName,
+                    DailyPrice = c.DailyPrice,
+                    ModelYear = c.ModelYear,
+                    CarName = c.Description,
+                    CarImages = ((from ci in  context.CarImages where ci.CarId == c.Id select ci.ImagePath).ToList()).Count == 0 ? 
+                        new List<string> {"defaultcar.png"} : (from ci in  context.CarImages where ci.CarId == c.Id select ci.ImagePath).ToList(),
+                };
+
             
             return filter == null
                 ? result.ToList()
@@ -69,33 +54,19 @@ public class EfCarDal : EfEntityRepositoryBase<Car,CarRentalContext>, ICarDal
                 join co in context.Colors on c.ColorId equals co.ColorId
                 where c.Id == Id
                 select new CarDetailDto
-                         {
-                             Id = c.Id,
-                                BrandId = b.BrandId,
-                                ColorId = co.ColorId,
-                             BrandName = b.BrandName,
-                             ColorName = co.ColorName,
-                             DailyPrice = c.DailyPrice,
-                             CarName = c.Description,
-                             ModelYear = c.ModelYear,
-                             CarImages = ((from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
-                                 select new CarImage
-                                 {
-                                     Id = ci.Id,
-                                     CarId = ci.CarId,
-                                     ImagePath = ci.ImagePath,
-                                     Date = ci.Date
-                                 }).ToList()).Count == 0 
-                                 ? new List<CarImage> {new CarImage {Id = -1, CarId = c.Id, Date = DateTime.Now ,ImagePath = "defaultcar.png"}} 
-                                 : (from ci in  context.CarImages.Where(ci => ci.CarId == c.Id)
-                                     select new CarImage
-                                     {
-                                         Id = ci.Id,
-                                         CarId = ci.CarId,
-                                         ImagePath = ci.ImagePath,
-                                         Date = ci.Date
-                                     }).ToList()
-                         };
+                {
+                    Id = c.Id,
+                    BrandId = b.BrandId,
+                    ColorId = co.ColorId,
+                    BrandName = b.BrandName,
+                    ColorName = co.ColorName,
+                    DailyPrice = c.DailyPrice,
+                    ModelYear = c.ModelYear,
+                    CarName = c.Description,
+                    CarImages = ((from ci in  context.CarImages where ci.CarId == c.Id select ci.ImagePath).ToList()).Count == 0 ? 
+                        new List<string> {"defaultcar.png"} : (from ci in  context.CarImages where ci.CarId == c.Id select ci.ImagePath).ToList(),
+                };
+
             return result.SingleOrDefault();
         }
     }

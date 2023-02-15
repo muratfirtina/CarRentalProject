@@ -20,6 +20,7 @@
       <PackageReference Include="Microsoft.IdentityModel.Abstractions" Version="6.25.1" />
       <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.25.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.1" />
+      <PackageReference Include="SkiaSharp" Version="2.88.3" />
       <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.25.1" />
     </ItemGroup>
 

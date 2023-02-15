@@ -13,5 +13,5 @@ public class CarDetailDto : IDto
     public int ModelYear { get; set; }
     
     public decimal DailyPrice { get; set; }
-    public List<CarImage> CarImages { get; set; }
+    public List<string> CarImages { get; set; }
 }

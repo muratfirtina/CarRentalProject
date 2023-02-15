@@ -168,6 +168,10 @@
               "target": "Package",
               "version": "[7.0.1, )"
             },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.25.1, )"

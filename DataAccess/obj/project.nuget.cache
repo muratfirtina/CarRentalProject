@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tmLhq8J565GL1Yd0m2Cp/lMHkSbemKzwxkmWIZiCN6zuBX6GI9aat4e2d3RcrSNqRhp6UbEzcjOymRBVPY8+4w==",
+  "dgSpecHash": "Aphbg2HvppB2gYB0MPqgp/RYf0NQhKhfMFsu/eKgAMjp+szPj5EdffByBfdZ8w2oxiG5+g3/cqBwiFjGebPiew==",
   "success": true,
   "projectFilePath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/DataAccess/DataAccess.csproj",
   "expectedPackageFiles": [
@@ -67,6 +67,9 @@
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp/2.88.3/skiasharp.2.88.3.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp.nativeassets.macos/2.88.3/skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp.nativeassets.win32/2.88.3/skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/system.buffers/4.5.0/system.buffers.4.5.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",

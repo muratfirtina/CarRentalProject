@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "sgeR+h5cxZCNxT2M+cLcjVq8lybmBVhtp7gQBTH7XTsj2IW0h/S07mcHjI02J7raUgb0ILGSfMQ3ulPAFQomNw==",
+  "dgSpecHash": "J4dn42OmG916xo4DFviFByEeyvIW88LjCKz8UnuVXwaazeHCVVLqtXLdJZww93XOIimMcpALNqDkh45Vlaiv4Q==",
   "success": true,
   "projectFilePath": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/WebAPI.csproj",
   "expectedPackageFiles": [
@@ -115,6 +115,9 @@
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp/2.88.3/skiasharp.2.88.3.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp.nativeassets.macos/2.88.3/skiasharp.nativeassets.macos.2.88.3.nupkg.sha512",
+    "/Users/muratfirtina/.nuget/packages/skiasharp.nativeassets.win32/2.88.3/skiasharp.nativeassets.win32.2.88.3.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "/Users/muratfirtina/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

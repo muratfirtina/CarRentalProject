@@ -1,9 +1,10 @@
 using Core.Utilities.Results;
 using Microsoft.AspNetCore.Http;
+using SkiaSharp;
 
 namespace Core.Utilities.Helpers;
 
-public class FileHelper2 //kullanmıyorum denemelerden biri
+public class FileHelper2 //frontendden gelen imajın pixel boyutunu azaltıyor.
 {
         private static string _currentFileDirectory = Environment.CurrentDirectory + "\\wwwroot";
         private static string _folderName = "Images/";
@@ -24,20 +25,23 @@ public class FileHelper2 //kullanmıyorum denemelerden biri
             {
                 return new ErrorResult(typeValid.Message);
             }
-
-            var randomGuid = Guid.NewGuid().ToString();
-
             
-            var directory = Path.Combine(_webRootPath, _folderName);
-            if (!Directory.Exists(directory))
-                Directory.CreateDirectory(directory);
-            var fileDirectory = directory + randomGuid + type;
+            var extension = Path.GetExtension(file.FileName);
+            var guid = Guid.NewGuid().ToString();
+            var fileName = $"{guid}{extension}";
+            
+            var thumbnailFilePath = Path.Combine(_webRootPath, _folderName, fileName);
 
-            CheckFileDirectoryExist(directory);
-            CreateImageFile(fileDirectory, file);
+            using (var stream = new FileStream(thumbnailFilePath, FileMode.Create))
+            {
+                file.CopyTo(stream);
+            }
 
-            var fileAddressToBeSavedOnDatabase = randomGuid + type;
-            return new SuccessResult(fileAddressToBeSavedOnDatabase.Replace("\\", "/"));
+            ResizeImage(thumbnailFilePath,50);
+
+            var imagePath = Path.Combine(fileName);
+            
+            return new SuccessResult(imagePath);
         }
 
         public static IResult Update(IFormFile file, string imagePath)
@@ -66,6 +70,22 @@ public class FileHelper2 //kullanmıyorum denemelerden biri
             // Message of the result returns the ImagePath of added image.
             var fileAddressToBeSavedOnDatabase = _folderName + randomGuid + type;
             return new SuccessResult(fileAddressToBeSavedOnDatabase.Replace("\\", "/"));
+        }
+        
+        private static void ResizeImage(string destinationPath, int percentage)
+        {
+            using (var originalBitmap = SKBitmap.Decode(destinationPath))
+            {
+                var newWidth = (int)Math.Round(originalBitmap.Width * percentage / 100.0);
+                var newHeight = (int)Math.Round(originalBitmap.Height * percentage / 100.0);
+                var scaledBitmap = originalBitmap.Resize(new SKImageInfo(newWidth, newHeight), SKBitmapResizeMethod.Lanczos3);
+                using (var image = SKImage.FromBitmap(scaledBitmap))
+                using (var data = image.Encode(SKEncodedImageFormat.Jpeg, 70))
+                using (var stream = File.OpenWrite(destinationPath))
+                {
+                    data.SaveTo(stream);
+                }
+            }
         }
 
 

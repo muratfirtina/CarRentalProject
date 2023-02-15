@@ -86,13 +86,7 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 
-app.UseFileServer(new FileServerOptions()
-{
-    FileProvider = new PhysicalFileProvider(
-        Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot/images")),
-    RequestPath = new PathString("/images"),
-    EnableDirectoryBrowsing = true
-});
+
 
 app.UseRouting();
 

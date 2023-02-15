@@ -45,7 +45,7 @@ public class FileHelper
             
         }
 
-        public static IResult Update(string sourcePath, IFormFile file)
+        public static IResult Update(IFormFile file, string sourcePath)
         {
             var fileExist = CheckFileExists(file);
             if (!fileExist.Success)

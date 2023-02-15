@@ -37,30 +37,6 @@ public class CarImageManager : ICarImageService
         return new SuccessResult(Messages.CarImageAdded);
     }
     
-    /*{
-        var ruleResult = BusinessRules.Run(CheckIfImageLimitExceeded(carImage.CarId));
-        if (!ruleResult.Success)
-        {
-            return new ErrorResult(ruleResult.Message);
-        }
-
-        Adding Image
-        var imageResult = FileHelper.Add(carImageUploadDto.file);
-        CarImage carImage = new CarImage
-        {
-            CarId = carImageUploadDto.CarId,
-            ImagePath = imageResult.Message,
-            Date = DateTime.Now
-        };
-        
-        if (!imageResult.Success)
-        {
-            return new ErrorResult(imageResult.Message);
-        }
-        _carImageDal.Add(carImage);
-        return new SuccessResult(Messages.CarImageAdded);
-    }*/
-
     public IResult Delete(CarImage carImage)
     {
         File.Delete(carImage.ImagePath);
@@ -72,7 +48,7 @@ public class CarImageManager : ICarImageService
     public IResult Update(IFormFile file, CarImage carImage)
     {
         {
-            carImage.ImagePath = FileHelper.Update(carImage.ImagePath, file).Message;
+            carImage.ImagePath = FileHelper.Update(file, carImage.ImagePath).Message;
             carImage.Date = DateTime.Now;
             _carImageDal.Update(carImage);
             return new SuccessResult(Messages.CarImageUpdated);
@@ -95,7 +71,7 @@ public class CarImageManager : ICarImageService
         if (carImage.Count == 0)
         {
             List<CarImage> carImages = new List<CarImage>();
-            carImages.Add(new CarImage { CarId = carId, ImagePath = @"\Images\defaultcar.png", Date = DateTime.Now });
+            carImages.Add(new CarImage { CarId = carId, ImagePath = "wwwroot/Images/defaultcar.png", Date = DateTime.Now });
             return new SuccessDataResult<List<CarImage>>(carImages);
         }
         return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(c=>c.CarId==carId).ToList());

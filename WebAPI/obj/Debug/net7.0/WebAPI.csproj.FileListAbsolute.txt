@@ -546,3 +546,8 @@
 /Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/obj/Debug/net7.0/WebAPI.pdb
 /Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/obj/Debug/net7.0/WebAPI.genruntimeconfig.cache
 /Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/obj/Debug/net7.0/ref/WebAPI.dll
+/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/SkiaSharp.dll
+/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/runtimes/osx/native/libSkiaSharp.dylib
+/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/runtimes/win-arm64/native/libSkiaSharp.dll
+/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/runtimes/win-x64/native/libSkiaSharp.dll
+/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/bin/Debug/net7.0/runtimes/win-x86/native/libSkiaSharp.dll
