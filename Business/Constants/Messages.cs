@@ -49,5 +49,12 @@ public class Messages
     public static string UserAlreadyExists = "Kullanıcı mevcut";
     public static string AccessTokenCreated = "Token oluşturuldu";
     public static string CarImageDoesNotFound = "Araç fotoğrafı bulunamadı";
-    
+    public static string RentDateCannotBeBeforeToday = "Kiralama tarihi bugünden önce olamaz";
+    public static string ReturnDateCannotBeLeftBlankAsThisCarWasAlsoRentedAtALaterDate = "Bu araç daha ileri tarih için kiralanmış. Araç teslim tarihi boş bırakılamaz";
+    public static string ThisCarHasNotBeenReturned = "Bu araç henüz teslim edilmedi";
+    public static string ReturnDateCannotBeEarlierThanRentDate = "Teslim tarihi kiralama tarihinden önce olamaz";
+    public static string ThisCarIsAlreadyRentedInSelectedDateRange = "Bu araç seçilen tarih aralığında zaten kiralanmış";
+    public static string YouAreDirectedToPaymentPage = "Ödeme sayfasına yönlendiriliyorsunuz";
+    public static string RentalAdded = "Kiralama işlemi başarılı";
+    public static string RentalUpdated = "Kiralama işlemi güncellendi";
 }

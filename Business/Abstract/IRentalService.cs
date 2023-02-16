@@ -10,6 +10,8 @@ public interface IRentalService
     IResult Delete(Rental rental);
     IResult Update(Rental rental);
     IDataResult<List<Rental>> GetAll();
+    IDataResult<List<Rental>> GetAllByCarId(int carId);
+    
     IDataResult<Rental> GetById(int rentalId);
     IDataResult<List<Rental>>GetRentalsByCustomerId(int customerId);
     IDataResult<List<RentalDetailDto>>GetRentalDetails();

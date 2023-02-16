@@ -100,5 +100,15 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+        [HttpGet("getallbycarid")]
+        public IActionResult GetAllByCarId(int id)
+        {
+            var result = _rentalService.GetAllByCarId(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
     }
 }
