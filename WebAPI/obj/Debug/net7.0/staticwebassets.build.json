@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "oxWmZJuJZ2MIyaQkmRW67dBX3Nz8rmCk5nMzE5xvCdk=",
+  "Hash": "9StjWxPEHivbm7KaBnk6P8kh58DngKPfcsLeI5QoRds=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "wwwroot/Images/.DS_Store"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/116a4b75-a962-4d05-98b2-95027939d003.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/169c2417-453f-422d-97dc-4a58c5d0a255.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/116a4b75-a962-4d05-98b2-95027939d003.jpg",
+      "RelativePath": "Images/169c2417-453f-422d-97dc-4a58c5d0a255.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/116a4b75-a962-4d05-98b2-95027939d003.jpg"
+      "OriginalItemSpec": "wwwroot/Images/169c2417-453f-422d-97dc-4a58c5d0a255.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/130f1f40-71a6-48ef-a2a7-ff794b3dfcc8.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/1d83818b-378f-410d-8adf-8230ebc0d324.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/130f1f40-71a6-48ef-a2a7-ff794b3dfcc8.jpg",
+      "RelativePath": "Images/1d83818b-378f-410d-8adf-8230ebc0d324.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,15 +82,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/130f1f40-71a6-48ef-a2a7-ff794b3dfcc8.jpg"
+      "OriginalItemSpec": "wwwroot/Images/1d83818b-378f-410d-8adf-8230ebc0d324.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/2ae690a3-4434-4c6c-80d0-b694e270410a.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/25073b0f-f461-4074-9e87-61a7f3d09918.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/2ae690a3-4434-4c6c-80d0-b694e270410a.jpg",
+      "RelativePath": "Images/25073b0f-f461-4074-9e87-61a7f3d09918.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/2ae690a3-4434-4c6c-80d0-b694e270410a.jpg"
+      "OriginalItemSpec": "wwwroot/Images/25073b0f-f461-4074-9e87-61a7f3d09918.jpg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/3cd080d4-b0e1-4713-8549-3796b0d8b7d0.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/27503ef1-8d44-47fb-b9e8-d47cf6322b55.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/3cd080d4-b0e1-4713-8549-3796b0d8b7d0.jpg",
+      "RelativePath": "Images/27503ef1-8d44-47fb-b9e8-d47cf6322b55.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/3cd080d4-b0e1-4713-8549-3796b0d8b7d0.jpg"
+      "OriginalItemSpec": "wwwroot/Images/27503ef1-8d44-47fb-b9e8-d47cf6322b55.jpg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/575c3919-3578-40d0-a88f-c8cf87e9babf.jpeg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/46123918-be97-456c-b54c-9d053010edcf.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/575c3919-3578-40d0-a88f-c8cf87e9babf.jpeg",
+      "RelativePath": "Images/46123918-be97-456c-b54c-9d053010edcf.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/575c3919-3578-40d0-a88f-c8cf87e9babf.jpeg"
+      "OriginalItemSpec": "wwwroot/Images/46123918-be97-456c-b54c-9d053010edcf.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/72eb324c-ea03-4246-aec5-7914f30745b0.jpeg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/64927fcd-a0e0-4655-8e2d-7ff5f9cd3e92.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/72eb324c-ea03-4246-aec5-7914f30745b0.jpeg",
+      "RelativePath": "Images/64927fcd-a0e0-4655-8e2d-7ff5f9cd3e92.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,15 +150,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/72eb324c-ea03-4246-aec5-7914f30745b0.jpeg"
+      "OriginalItemSpec": "wwwroot/Images/64927fcd-a0e0-4655-8e2d-7ff5f9cd3e92.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/73d472a7-2a68-4a6f-8d43-176ed912a535.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/65086454-1ec9-4cdd-a6f8-222eca235f5b.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/73d472a7-2a68-4a6f-8d43-176ed912a535.jpg",
+      "RelativePath": "Images/65086454-1ec9-4cdd-a6f8-222eca235f5b.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/73d472a7-2a68-4a6f-8d43-176ed912a535.jpg"
+      "OriginalItemSpec": "wwwroot/Images/65086454-1ec9-4cdd-a6f8-222eca235f5b.jpg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/7c09397e-5ca1-4f59-91fb-825e3823c190.jpeg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/7f8ba9ef-70de-4455-b1ec-fffdcb8902e3.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/7c09397e-5ca1-4f59-91fb-825e3823c190.jpeg",
+      "RelativePath": "Images/7f8ba9ef-70de-4455-b1ec-fffdcb8902e3.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,15 +184,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/7c09397e-5ca1-4f59-91fb-825e3823c190.jpeg"
+      "OriginalItemSpec": "wwwroot/Images/7f8ba9ef-70de-4455-b1ec-fffdcb8902e3.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/a60f02c7-34ca-4777-bd42-6fce576b76ca.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/97412748-8098-4aec-bd6b-2d934406d5fb.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/a60f02c7-34ca-4777-bd42-6fce576b76ca.jpg",
+      "RelativePath": "Images/97412748-8098-4aec-bd6b-2d934406d5fb.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/a60f02c7-34ca-4777-bd42-6fce576b76ca.jpg"
+      "OriginalItemSpec": "wwwroot/Images/97412748-8098-4aec-bd6b-2d934406d5fb.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/b7848e71-c16c-4922-a09c-67c38a7c2c14.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/a1c2029a-b9af-42a7-8e49-9194207b8afd.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/b7848e71-c16c-4922-a09c-67c38a7c2c14.jpg",
+      "RelativePath": "Images/a1c2029a-b9af-42a7-8e49-9194207b8afd.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/b7848e71-c16c-4922-a09c-67c38a7c2c14.jpg"
+      "OriginalItemSpec": "wwwroot/Images/a1c2029a-b9af-42a7-8e49-9194207b8afd.jpeg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/bb6a260d-9540-4b83-8fe9-6a2e5ddbd717.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/a371a662-e91c-491f-afda-b29161147793.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/bb6a260d-9540-4b83-8fe9-6a2e5ddbd717.jpg",
+      "RelativePath": "Images/a371a662-e91c-491f-afda-b29161147793.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,15 +235,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/bb6a260d-9540-4b83-8fe9-6a2e5ddbd717.jpg"
+      "OriginalItemSpec": "wwwroot/Images/a371a662-e91c-491f-afda-b29161147793.jpg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/d4777c30-0968-4661-a509-53798cebc3b6.jpeg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/abcc5e74-b79d-4fc0-a6ec-d2c5158f9425.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/d4777c30-0968-4661-a509-53798cebc3b6.jpeg",
+      "RelativePath": "Images/abcc5e74-b79d-4fc0-a6ec-d2c5158f9425.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -252,15 +252,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/d4777c30-0968-4661-a509-53798cebc3b6.jpeg"
+      "OriginalItemSpec": "wwwroot/Images/abcc5e74-b79d-4fc0-a6ec-d2c5158f9425.jpg"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/d6ac978d-38ab-4fce-828a-6fda36d15ede.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/d08aa249-72b2-4cd6-a5d0-c7c5b70004e6.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/d6ac978d-38ab-4fce-828a-6fda36d15ede.jpg",
+      "RelativePath": "Images/d08aa249-72b2-4cd6-a5d0-c7c5b70004e6.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -269,7 +269,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/d6ac978d-38ab-4fce-828a-6fda36d15ede.jpg"
+      "OriginalItemSpec": "wwwroot/Images/d08aa249-72b2-4cd6-a5d0-c7c5b70004e6.jpeg"
     },
     {
       "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/defaultcar.png",
@@ -289,12 +289,12 @@
       "OriginalItemSpec": "wwwroot/Images/defaultcar.png"
     },
     {
-      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/e34739f1-5554-4e8c-b04b-1f4db572062e.jpg",
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/e3b629f8-9d47-4265-ab96-9944059491ec.jpeg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
       "BasePath": "_content/WebAPI",
-      "RelativePath": "Images/e34739f1-5554-4e8c-b04b-1f4db572062e.jpg",
+      "RelativePath": "Images/e3b629f8-9d47-4265-ab96-9944059491ec.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -303,7 +303,58 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/Images/e34739f1-5554-4e8c-b04b-1f4db572062e.jpg"
+      "OriginalItemSpec": "wwwroot/Images/e3b629f8-9d47-4265-ab96-9944059491ec.jpeg"
+    },
+    {
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/e9864574-199b-44c8-aca2-3fac7bdac664.jpeg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Images/e9864574-199b-44c8-aca2-3fac7bdac664.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/e9864574-199b-44c8-aca2-3fac7bdac664.jpeg"
+    },
+    {
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/f084888b-d3d5-4f30-a4b2-2e9dc58b2a8c.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Images/f084888b-d3d5-4f30-a4b2-2e9dc58b2a8c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/f084888b-d3d5-4f30-a4b2-2e9dc58b2a8c.jpg"
+    },
+    {
+      "Identity": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/Images/f34e8c4f-bbb2-4120-a467-f5c465e6c662.jpeg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/muratfirtina/Projects/GitHub/CarRentalProject/WebAPI/wwwroot/",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "Images/f34e8c4f-bbb2-4120-a467-f5c465e6c662.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Images/f34e8c4f-bbb2-4120-a467-f5c465e6c662.jpeg"
     }
   ]
 }

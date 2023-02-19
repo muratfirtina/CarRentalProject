@@ -4,14 +4,14 @@ using SkiaSharp;
 
 namespace Core.Utilities.Helpers;
 
-public class FileHelper2 //frontendden gelen imajın pixel boyutunu yarıya düşürüyor.
+public class FileHelper3 //frontendden gelen imajın pixel boyutunu azaltıyor.
 {
         private static string _currentFileDirectory = Environment.CurrentDirectory + "\\wwwroot";
         private static string _folderName = "Images/";
         private static string _webRootPath =Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/");
 
         
-        public static IResult Add(IFormFile file)
+        public static IResult Add(IFormFile file, int maxWidth, int maxHeight)
         {
             var fileExist = CheckFileExists(file);
             if (!fileExist.Success)
@@ -29,7 +29,6 @@ public class FileHelper2 //frontendden gelen imajın pixel boyutunu yarıya dü�
             var extension = Path.GetExtension(file.FileName);
             var guid = Guid.NewGuid().ToString();
             var fileName = $"{guid}{extension}";
-            
             var thumbnailFilePath = Path.Combine(_webRootPath, _folderName, fileName);
 
             using (var stream = new FileStream(thumbnailFilePath, FileMode.Create))
@@ -37,12 +36,13 @@ public class FileHelper2 //frontendden gelen imajın pixel boyutunu yarıya dü�
                 file.CopyTo(stream);
             }
 
-            ResizeImage(thumbnailFilePath,50);
+            ResizeImage(thumbnailFilePath, maxWidth, maxHeight);
 
             var imagePath = Path.Combine(fileName);
             
             return new SuccessResult(imagePath);
         }
+
 
         public static IResult Update(IFormFile file, string imagePath)
         {
@@ -72,35 +72,29 @@ public class FileHelper2 //frontendden gelen imajın pixel boyutunu yarıya dü�
             return new SuccessResult(fileAddressToBeSavedOnDatabase.Replace("\\", "/"));
         }
         
-        private static void ResizeImage(string destinationPath, int percentage)
+        private static void ResizeImage(string filePath, int maxWidth, int maxHeight)
         {
-            using (var originalBitmap = SKBitmap.Decode(destinationPath))
+            using (var original = SKBitmap.Decode(filePath))
             {
-                var newWidth = (int)Math.Round(originalBitmap.Width * percentage / 100.0);
-                var newHeight = (int)Math.Round(originalBitmap.Height * percentage / 100.0);
-                var scaledBitmap = originalBitmap.Resize(new SKImageInfo(newWidth, newHeight), SKBitmapResizeMethod.Lanczos3);
-                using (var image = SKImage.FromBitmap(scaledBitmap))
+                var scaled = original.Resize(new SKImageInfo(maxWidth, maxHeight), SKFilterQuality.Medium);
+                var image = SKImage.FromBitmap(scaled);
+        
+                // Dosya adı ve kayıt yolu oluşturma
+                var fileName = Path.GetFileName(filePath);
+                var path = Path.Combine(Path.GetDirectoryName(filePath), fileName);
+                
+                // Resmi dosyaya kaydetme
+                using (var data = image.Encode(SKEncodedImageFormat.Jpeg, 100))
+                using (var stream = File.OpenWrite(path))
                 {
-                    using (var jpegData = image.Encode(SKEncodedImageFormat.Jpeg, 70))
-                    {
-                        using (var stream = File.OpenWrite(destinationPath))
-                        {
-                            jpegData.SaveTo(stream);
-                        }
-                    }
-
-                    using (var pngData = image.Encode(SKEncodedImageFormat.Png, 70))
-                    {
-                        using (var stream = File.OpenWrite(destinationPath))
-                        {
-                            pngData.SaveTo(stream);
-                        }
-                    }
-                    
+                    data.SaveTo(stream);
                 }
+                    
+                
                 
             }
         }
+
 
 
         public static IResult Delete(string path)

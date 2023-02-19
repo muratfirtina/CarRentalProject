@@ -123,7 +123,7 @@ public class FileHelper
         
         private static IResult CheckFileTypeValid(string type)
         {
-            if (type == ".jpeg" || type == ".png" || type == ".jpg")
+            if (type == ".jpeg" || type == ".png" || type == ".JPG" || type == ".jpg" || type == ".JPEG" || type == ".PNG")
             {
                 return new SuccessResult();
             }
